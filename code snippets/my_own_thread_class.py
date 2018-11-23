@@ -14,8 +14,9 @@ class MyOwnThread (threading.Thread):
                             
     def run (self):
         while not self.terminate: 
-            if (not self.start_action):
+            if (not self.start_action):  # lie dormant
                 sleep(0)     # equivalent to yield()
+                continue
             try:
                 self.counter += 1
                 print ("Counter: {}".format(self.counter))
