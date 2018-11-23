@@ -1,13 +1,13 @@
 // Split large packets int 512 byte chunks and send them one by one
 // in response to prompts of 'N'. Aborts  if the prompt is 'A'.
 //use the test tool: https://packetsender.com/documentation
-// Or the python program udpReceiver13.py
+// Or the python program udpReceiver.py
 
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 
-const char* ssid = "RajaCell";
-const char* password = "raja1234";
+const char* ssid = "xxxx";
+const char* password = "yyyy";
 
 #define IN_BUFFER_SIZE   12     // mostly single byte commands 
 #define OUT_BUFFER_SIZE  512    // theoretical max; don't alter this ! 
