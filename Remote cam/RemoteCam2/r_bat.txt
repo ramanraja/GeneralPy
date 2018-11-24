@@ -1,0 +1,4 @@
+del   RemoteCam.bin
+ren   RemoteCam2.ino.generic.bin   RemoteCam.bin
+copy  RemoteCam.bin  D:\Raja1\work\Arduino\FirmWareServer\ota
+copy  RemoteCam.txt  D:\Raja1\work\Arduino\FirmWareServer\ota
